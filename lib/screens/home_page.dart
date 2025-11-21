@@ -89,11 +89,14 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         const SizedBox(height: 4),
-                        Text(
-                          'Here\'s your asset overview',
-                          style: theme.textTheme.bodyLarge?.copyWith(
-                            color: theme.colorScheme.onSurface
-                                .withValues(alpha: 0.7),
+                        Semantics(
+                          label: 'Semantic label',
+                          child: Text(
+                            'Here\'s your asset overview Demo Test',
+                            style: theme.textTheme.bodyLarge?.copyWith(
+                              color: theme.colorScheme.onSurface
+                                  .withValues(alpha: 0.7),
+                            ),
                           ),
                         ),
                       ],
