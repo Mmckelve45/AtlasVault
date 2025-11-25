@@ -99,6 +99,9 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                         ),
+                        Text('Hello, world!',
+                            style:
+                                TextStyle(color: Colors.black, fontSize: 14.0)),
                       ],
                     ),
                   ),
@@ -291,6 +294,10 @@ class _StatusCard extends StatelessWidget {
     final theme = Theme.of(context);
 
     return CustomCard(
+      // Light blue background using themed primaryContainer
+      backgroundColor: theme.colorScheme.primaryContainer,
+      // Stronger, vibrant shadow tied to the primary color
+      shadowColor: theme.colorScheme.primary,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
